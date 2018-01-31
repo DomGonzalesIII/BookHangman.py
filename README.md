@@ -89,6 +89,7 @@ secretWord = getRandomWord(words)
 gameIsDone = False
 
 while True:
+    print(secretWord)                                                                               # added this for degbugging
     displayBoard(missedLetters, correctLetters, secretWord)
 
     # Let the player enter a letter.
@@ -123,4 +124,5 @@ while True:
             gameIsDone = False
             secretWord = getRandomWord(words)
         else:
+            print('Thanks for playing, goodbye!')
             break
